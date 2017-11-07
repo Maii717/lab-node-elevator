@@ -3,17 +3,22 @@ class Elevator {
     this.floor      = 0;
     this.MAXFLOOR   = 10;
     this.requests   = [];
+    this.direction = "up";
   }
 
   start() { }
   stop() { }
-  update() { }
+  update() {
+
+  this.log();
+}
   _passengersEnter() { }
   _passengersLeave() { }
   floorUp() { }
   floorDown() { }
   call() { }
-  log() { }
+  log() {
+  console.log("direction"+" "+this.direction+" "+"floor"+" "+this.floor); }
 }
 
 module.exports = Elevator;
